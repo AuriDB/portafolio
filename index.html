@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexandra Zeledón Ovares · Portafolio en construcción</title>
+<meta name="description" content="Portafolio profesional de Alexandra Zeledón Ovares — Ingeniería de Software, arquitectura AWS. Próximamente.">
+<link rel="icon" type="image/svg+xml" href="favicon-alexandra.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B;
+    --navy-d:#081D40;
+    --white:#F4F6F9;
+    --teal:#14B8A6;
+    --teal-d:#0E8F81;
+    --ink:#1E293B;
+    --gray:#94A3B8;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Open Sans', sans-serif;
+    color:#fff;
+    background: radial-gradient(1200px 800px at 85% 15%, #122C5C 0%, var(--navy-d) 55%, #061327 100%);
+    overflow-x:hidden;
+    position:relative;
+  }
+  #network{ position:fixed; inset:0; width:100%; height:100%; z-index:0; opacity:.55; }
+  .wrap{
+    position:relative; z-index:1;
+    max-width: 640px;
+    margin: 0 24px;
+    text-align:center;
+    padding: 48px 40px;
+    background: rgba(8, 29, 64, 0.35);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+  }
+  .mark{ width:84px; height:84px; margin: 0 auto 22px; }
+  h1{
+    font-family:'Montserrat', sans-serif;
+    font-weight:800;
+    font-size: clamp(26px, 5vw, 38px);
+    margin: 0 0 6px;
+    letter-spacing:.2px;
+  }
+  .slogan{
+    font-family:'Montserrat', sans-serif;
+    font-weight:600;
+    color: var(--teal);
+    font-size: clamp(14px, 2.6vw, 17px);
+    margin: 0 0 26px;
+  }
+  .badge{
+    display:inline-flex; align-items:center; gap:8px;
+    background: rgba(20,184,166,.12);
+    border: 1px solid rgba(20,184,166,.5);
+    color: var(--teal);
+    font-family:'Montserrat', sans-serif;
+    font-weight:700;
+    font-size: 12.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    border-radius: 999px;
+    margin-bottom: 22px;
+  }
+  .badge .dot{ width:7px; height:7px; border-radius:50%; background:var(--teal); animation: pulse 1.6s ease-in-out infinite; }
+  @keyframes pulse{ 0%,100%{opacity:1} 50%{opacity:.3} }
+  p.desc{
+    font-size: 15px;
+    line-height: 1.6;
+    color: #CBD5E1;
+    margin: 0 0 28px;
+  }
+  .links{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+  .links a{
+    display:flex; align-items:center; gap:8px;
+    text-decoration:none;
+    color:#fff;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.14);
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-family:'Open Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    transition: background .2s, border-color .2s, transform .2s;
+  }
+  .links a:hover{ background: rgba(20,184,166,.16); border-color: var(--teal); transform: translateY(-2px); }
+  .links svg{ width:16px; height:16px; flex:none; }
+  footer{ margin-top: 30px; font-size: 11.5px; color: #64748B; }
+  footer a{ color:#94A3B8; }
+</style>
+</head>
+<body>
+<canvas id="network"></canvas>
+
+<div class="wrap">
+  <svg class="mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Isotipo Alexandra Zeledón Ovares">
+    <path d="M40 182 L100 26 L160 182" fill="none" stroke="#FFFFFF" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M66 120 Q100 132 134 120" fill="none" stroke="#14B8A6" stroke-width="17" stroke-linecap="round"/>
+  </svg>
+
+  <div class="badge"><span class="dot"></span> Sitio en construcción</div>
+
+  <h1>Alexandra Zeledón Ovares</h1>
+  <p class="slogan">Arquitectura en la nube con propósito.</p>
+
+  <p class="desc">Estoy construyendo mi portafolio profesional como ingeniera de software enfocada en arquitectura AWS y optimización de costos en la nube. Muy pronto encontrarás aquí mis proyectos, habilidades y certificaciones.</p>
+
+  <div class="links">
+    <a href="https://www.linkedin.com/in/acovares/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+      LinkedIn
+    </a>
+    <a href="https://github.com/AuriDB" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.26-.45-1.29.1-2.68 0 0 .84-.27 2.75 1.03a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.39.2 2.42.1 2.68.64.7 1.03 1.6 1.03 2.69 0 3.85-2.35 4.7-4.58 4.95.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+      GitHub
+    </a>
+    <a href="mailto:ale_ovares@yahoo.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h18v14H3z"/><path d="M3 5l9 7 9-7"/></svg>
+      Correo
+    </a>
+  </div>
+
+  <footer>&copy; 2026 Alexandra Zeledón Ovares &middot; Hospedado con GitHub Pages</footer>
+</div>
+
+<script>
+// Fondo animado de red (lineas y nodos), sutil, inspirado en arquitectura de nube.
+const canvas = document.getElementById('network');
+const ctx = canvas.getContext('2d');
+let w, h, nodes;
+function resize(){
+  w = canvas.width = window.innerWidth;
+  h = canvas.height = window.innerHeight;
+  const count = Math.max(18, Math.min(42, Math.floor((w*h)/45000)));
+  nodes = Array.from({length: count}, () => ({
+    x: Math.random()*w, y: Math.random()*h,
+    vx: (Math.random()-0.5)*0.25, vy: (Math.random()-0.5)*0.25
+  }));
+}
+function tick(){
+  ctx.clearRect(0,0,w,h);
+  for(const n of nodes){
+    n.x += n.vx; n.y += n.vy;
+    if(n.x<0||n.x>w) n.vx*=-1;
+    if(n.y<0||n.y>h) n.vy*=-1;
+  }
+  for(let i=0;i<nodes.length;i++){
+    for(let j=i+1;j<nodes.length;j++){
+      const a=nodes[i], b=nodes[j];
+      const d = Math.hypot(a.x-b.x, a.y-b.y);
+      if(d < 170){
+        ctx.strokeStyle = `rgba(20,184,166,${0.12*(1-d/170)})`;
+        ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+      }
+    }
+  }
+  for(const n of nodes){
+    ctx.beginPath();
+    ctx.arc(n.x,n.y,2,0,Math.PI*2);
+    ctx.fillStyle = 'rgba(20,184,166,.8)';
+    ctx.fill();
+  }
+  requestAnimationFrame(tick);
+}
+window.addEventListener('resize', resize);
+resize();
+tick();
+</script>
+</body>
+</html>
